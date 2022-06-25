@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export async function getImg(searchValue, pagination) {
+export async function getImg(searchValue, page) {
   const params = new URLSearchParams({
     key: '28105456-e5cf9b64fe6b174952de01477',
     q: searchValue,
@@ -8,7 +8,7 @@ export async function getImg(searchValue, pagination) {
     orientation: 'horizontal',
     safesearch: true,
     per_page: 40,
-    pagination,
+    page,
   });
 
   try {

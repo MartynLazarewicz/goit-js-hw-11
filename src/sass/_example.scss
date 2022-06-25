@@ -14,9 +14,6 @@
     border: 2px solid transparent;
     border-radius: 5px;
 
-    &:focus-within {
-      border-color: darkcyan;
-    }
   }
 
   &__input {
@@ -101,4 +98,5 @@
   text-transform: uppercase;
   color: white;
   background-color: darkslateblue;
+  cursor: pointer;
 }
